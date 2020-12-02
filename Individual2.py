@@ -83,17 +83,17 @@ if __name__ == '__main__':
             count = 0
             # Проверить сведения товара из списка.
             for markets in market:
-                if markets.get('product') >= period:
+                if markets.get('shop') >= period:
                     count += 1
                     print(
-                        '{:>4}: {}'.format(count, markets.get('product', ''))
+                        '{:>4}: {}'.format(count, markets.get('shop', ''))
                     )
-                    print('Название магазина:', markets.get('shop', ''))
+                    print('Название товара:', markets.get('product', ''))
                     print('Стоимость в руб.:', markets.get('price', ''))
 
             # Если счетчик равен 0, то работники не найдены.
             if count == 0:
-                print("Продукт не найден.")
+                print("Магазин не найден.")
 
         elif command.startswith('load '):
             # Разбить команду на части для выделения имени файла.

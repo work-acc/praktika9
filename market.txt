@@ -1,1 +1,1 @@
-[{"product": "apple", "shop": "okey", "price": 111}]
+[{"product": "apple", "shop": "okey", "price": 100}]
